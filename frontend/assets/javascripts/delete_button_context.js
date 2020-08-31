@@ -9,10 +9,7 @@ $(document).ready(function() {
         if (deleteBtn.length > 0) {
           deleteTarget = $(deleteBtn).attr('data-target');
           if (deleteTarget.match(/resources/)) {
-            $(deleteBtn).html('Delete Resource');
-          }
-          else if (deleteTarget.match(/archival_objects/)) {
-            $(deleteBtn).html('Delete Archival Object');
+            $(deleteBtn).html('Delete Resource. Careful now!');
           }
           console.log(deleteTarget);
         }
